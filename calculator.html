@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de site</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        font-style: italic;
+    }
+    main{
+        width: 60%; position: absolute; left: 50%; top: 50%;
+        transform: translate(-50%,-50%);
+        border: 2px solid gray; border-radius: 5px;
+    }
+    body{
+        margin: 0; display: flex; justify-content: center;
+    }
+    .header{
+        background-color: rgb(49, 48, 48); text-align: center;
+        font-style: italic; color: white;
+    }
+    .header__title{
+         font-size: 25px; padding-right: 20px;
+    }
+    .header__nav, ul, li{
+        display:inline-block
+    }
+    .header__nav li{
+        margin: 0 10px; 
+        cursor: pointer;
+        font-size: 17px;
+        transition: color 0.4s linear;
+    }
+    .header__nav li:hover{
+        color: rgb(187, 184, 184);
+    }
+    .hero{
+        text-align: center; margin: 20px 0; padding: 40px;
+    }
+    .hero__title{
+        font-weight: 600;
+    }
+    .hero-button{
+        padding: 10px 25px; border: 1px solid black; border-radius: 5px;
+        background-color: rgba(34, 33, 33, 0.685);
+        font-weight: bold; margin-top: 40px;
+        transition: 0.8s; cursor: pointer;
+    }
+    .hero-button:hover{
+        color: #fff;
+    }
+    .footer{
+        text-align: center; padding: 20px; background-color: gainsboro;
+    }
+</style>
+<body>
+    <main>
+    <header class="header">
+            <span class="header__title">Selfit GYM</span>
+            <nav class="header__nav">
+                <ul>
+                    <li>Exemplo</li>
+                    <li>Exemplo</li>
+                    <li>Exemplo</li>
+                    <li>Exemplo</li>
+                </ul>
+            </nav>
+    </header>
+    <section class="hero">
+        <h1 class="hero__title">VENHA CONHECER A SELFIT</h1>
+        <p class="hero__subtitle">Seja um SELF</p>
+        <button class="hero-button">SE REGISTRAR</button>
+    </section>
+    <footer class="footer">
+        <p class="footer__p">Footer Principal Exemplo</p>
+    </footer>
+</main>
+</body>
+</html>
